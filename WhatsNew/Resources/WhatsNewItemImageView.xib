@@ -24,20 +24,20 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YUp-od-Q3r">
-                    <rect key="frame" x="30" y="10" width="80" height="80"/>
+                    <rect key="frame" x="10" y="10" width="80" height="80"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="80" id="3Lc-El-pzp"/>
                         <constraint firstAttribute="width" secondItem="YUp-od-Q3r" secondAttribute="height" id="vKs-2M-Zfk"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Feature Title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHq-c8-hDU">
-                    <rect key="frame" x="130" y="10" width="215" height="24"/>
+                    <rect key="frame" x="101" y="10" width="264" height="24"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Automatically use your preferred font size specified in the Settings app." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Mz-s6-ygM">
-                    <rect key="frame" x="130" y="44" width="215" height="72"/>
+                    <rect key="frame" x="101" y="44" width="264" height="72"/>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -47,14 +47,14 @@
             <constraints>
                 <constraint firstItem="9Mz-s6-ygM" firstAttribute="leading" secondItem="DHq-c8-hDU" secondAttribute="leading" id="7RY-jd-FXf"/>
                 <constraint firstItem="DHq-c8-hDU" firstAttribute="top" secondItem="YUp-od-Q3r" secondAttribute="top" id="91A-Gf-wNf"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="DHq-c8-hDU" secondAttribute="trailing" constant="30" id="Hnl-TZ-yyR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="DHq-c8-hDU" secondAttribute="trailing" constant="10" id="Hnl-TZ-yyR"/>
                 <constraint firstItem="YUp-od-Q3r" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="IOa-c3-Qfk"/>
                 <constraint firstItem="9Mz-s6-ygM" firstAttribute="top" secondItem="DHq-c8-hDU" secondAttribute="bottom" constant="10" id="Ito-zx-pxG"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9Mz-s6-ygM" secondAttribute="trailing" constant="30" id="WOy-Wd-fAF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9Mz-s6-ygM" secondAttribute="trailing" constant="10" id="WOy-Wd-fAF"/>
                 <constraint firstItem="DHq-c8-hDU" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="YLG-HO-eQw"/>
-                <constraint firstItem="DHq-c8-hDU" firstAttribute="leading" secondItem="YUp-od-Q3r" secondAttribute="trailing" constant="20" id="apE-HS-8dR"/>
+                <constraint firstItem="DHq-c8-hDU" firstAttribute="leading" secondItem="YUp-od-Q3r" secondAttribute="trailing" constant="11" id="apE-HS-8dR"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="9Mz-s6-ygM" secondAttribute="bottom" constant="10" id="kJN-Zk-hme"/>
-                <constraint firstItem="YUp-od-Q3r" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="xl6-a9-Ulb"/>
+                <constraint firstItem="YUp-od-Q3r" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="xl6-a9-Ulb"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
