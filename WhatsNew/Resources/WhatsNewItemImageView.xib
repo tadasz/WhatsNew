@@ -37,7 +37,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Automatically use your preferred font size specified in the Settings app." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Mz-s6-ygM">
-                    <rect key="frame" x="101" y="44" width="264" height="72"/>
+                    <rect key="frame" x="101" y="44" width="264" height="57.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -54,7 +54,7 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9Mz-s6-ygM" secondAttribute="trailing" constant="10" id="WOy-Wd-fAF"/>
                 <constraint firstItem="DHq-c8-hDU" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="YLG-HO-eQw"/>
                 <constraint firstItem="DHq-c8-hDU" firstAttribute="leading" secondItem="YUp-od-Q3r" secondAttribute="trailing" constant="11" id="apE-HS-8dR"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="9Mz-s6-ygM" secondAttribute="bottom" constant="10" id="kJN-Zk-hme"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9Mz-s6-ygM" secondAttribute="bottom" constant="10" id="kJN-Zk-hme"/>
                 <constraint firstItem="YUp-od-Q3r" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="xl6-a9-Ulb"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
