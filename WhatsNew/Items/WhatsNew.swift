@@ -27,6 +27,7 @@ public struct WhatsNew {
         case .debug: return true
         case .never: return false
         case .majorVersion: return didChangeMajorVersion(previous: previousAppVersion, current: appVersion)
+        case .minorVersion: return didChangeMajorOrMinorVersion(previous: previousAppVersion, current: appVersion)
         case .always: return didUpdate
         }
     }
@@ -35,5 +36,19 @@ public struct WhatsNew {
         guard let previousMajor = previous?.split(separator: ".").first, let previousMajorInt = Int(previousMajor) else { return false }
         guard let currentMajor = current?.split(separator: ".").first, let currentMajorInt = Int(currentMajor) else { return false }
         return currentMajorInt > previousMajorInt
+    }
+    
+    private static func didChangeMajorOrMinorVersion(previous: String?, current: String?) -> Bool {
+        let didMajorChanged = didChangeMajorVersion(previous: previous, current: current)
+        let didMinorChanged = didChangeMinorVersion(previous: previous, current: current)
+        
+        return didMajorChanged || didMinorChanged
+    }
+    
+    private static func didChangeMinorVersion(previous: String?, current: String?) -> Bool {
+        guard let previousMinor = previous?.split(separator: ".")[1], let previousMinorInt = Int(previousMinor) else { return false }
+        guard let currentMinor = current?.split(separator: ".")[1], let currentMinorInt = Int(currentMinor) else { return false }
+        
+        return currentMinorInt > previousMinorInt
     }
 }

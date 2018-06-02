@@ -13,6 +13,8 @@ public enum PresentationOption {
     case always
     /// Only present if the main bundle changes major version.
     case majorVersion
+    /// Only present if the main bundle changes major or minor version.
+    case minorVersion
     /// Never present.
     case never
     /// present always
